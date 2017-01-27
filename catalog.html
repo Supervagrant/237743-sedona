@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8">
+    <title>Седона</title>
+  </head>
+  <body>
+    <header class="main-header">
+      <div class="container">
+        <nav class="main-navigation">
+          <ul>
+            <li class="main-navigation-left">
+              <a href="#">Информация</a>
+            </li>
+            <li class="main-navigation-left">
+              <a href="#">Фото и видео</a>
+            </li>
+            <li class="main-navigation-right">
+              <a href="#">Карта штата</a>
+            </li>
+            <li class="main-navigation-right">Гостиницы              
+            </li>
+          </ul>
+        </nav>
+        <div class="header-logo">
+          <a><img src="img/index-logo.png" width="138" height="70" alt="Sity of Sedona"></a>
+        </div>
+      </div>
+    </header>
+    <main class="main">
+      <div class="container">
+        <section class="main-form">
+          <form class="form-list" action="https://echo.htmlacademy.ru" method="get">
+            <ul class="form-list-checkbox">
+              <span class="caption">Инфраструктура</span>
+              <li>
+                <label>
+                  <input type="checkbox" name="pool">Бассейн
+                </label>  
+              </li>
+              <li>
+                <label>
+                  <input type="checkbox" name="parking">Парковка
+                </label>  
+              </li>
+              <li>
+                <label>
+                  <input type="checkbox" name="wi-fi">Wi-fi
+                </label>  
+              </li>
+            </ul>
+            <ul class="form-list-checkbox">
+              <span class="caption">Тип жилья:</span>
+              <li>
+                <label>
+                  <input type="checkbox" name="hotel">Гостиница
+                </label>  
+              </li>
+              <li>
+                <label>
+                  <input type="checkbox" name="motel">Мотель
+                </label>  
+              </li>
+              <li>
+                <label>
+                  <input type="checkbox" name="apartments">Апартаменты
+                </label>  
+              </li>
+            </ul>
+            <div class="price">
+              <p class="caption">Стоимость в сутки (Р):</p>
+              <input type="text" name="min-price" placeholder="от 0">
+              <input type="text" name="max-price" placeholder="до 3000">
+              <div class="range">
+              </div>
+            </div>
+            <input type="submit" class="btn" value="Показать">
+          </form>
+        </section>
+        <section class="main-result">
+          <div class="result">
+          </div>
+          <div class="result-housing">
+            <div class="housing hotel">
+              <img src="img/index-logo.png" width="135" height="90" alt="Foto of Amara Resort & Spa">
+              <div class="housing-description">
+                <h2>Amara Resort & Spa</h2>
+                <div class="housing-description-left">
+                  <span>Гостиница</span>
+                  <a href="#">Подробнее</a>                  
+                </div>
+                <div class="housing-description-right">
+                  <span>От 4000 р.</span>
+                  <a href="#">Забронировать</a>                  
+                </div>
+              </div>
+              <div class="housing-description-rating">
+              </div>
+            </div>
+            <div class="housing motel">
+            </div>
+            <div class="housing apartments">
+            </div>
+          </div>
+        </section>
+      </div>
+    </main>
+    
+    
+    <footer class="main-footer">
+      <div class="container">
+        <div class="main-footer-logo">
+          <p>#Visitsedona</p>
+        </div>
+        <div class="footer-social">
+          <a class="social-btn" href="https://tvitter.com/htmlacademy">Twitter</a>
+          <a class="social-btn" href="https://facebook.com/htmlacademy">Facebook</a>
+          <a class="social-btn" href="https://instagram.com/htmlacademy">YouTube</a>
+        </div>
+        <div class="footer-copyright">
+          <span class="footer-copyright-text">Website by</span><a href="https://htmlacademy.ru">HTML Academy</a>
+        </div>
+      </div>      
+    </footer>     
+  </body>
+</html>
