@@ -8,23 +8,23 @@
     <header class="main-header">
       <div class="container">
         <nav class="main-navigation">
-          <ul>
+          <ul class="main-navigation-left">
             <li class="main-navigation-left">
               <a href="#">Информация</a>
             </li>
             <li class="main-navigation-left">
               <a href="#">Фото и видео</a>
             </li>
+          </ul>
+          <a class="header-logo"><img src="img/index-logo.png" width="138" height="70" alt="Sity of Sedona"></a>
+          <ul class="main-navigation-left">          
             <li class="main-navigation-right">
               <a href="#">Карта штата</a>
             </li>
             <li class="main-navigation-right">
               <a href="#">Гостиницы</a>
             </li>
-          </ul>
-          <div class="header-logo">
-            <a><img src="img/index-logo.png" width="138" height="70" alt="Sity of Sedona"></a>
-          </div>
+          </ul>          
         </nav>        
       </div>
     </header>
@@ -42,30 +42,24 @@
             <div class="features-item-slogan">
               <h2 class="features-item-caption">Настоящий <br>
               городок</h2>
-              <span>№ 1</span>
+              <p>№ 1</p>
               <p>Седона - не аттракцион для туристов, там течет своя жизнь</p>
             </div>
             <div class="features-item-image">
             </div>  
           </div>
           <div class="features-reference">
-            <div class="features-reference-item">
-              <img src="img/index-logo.png" width="75" height="72" alt="Жильё">
-              <span>Жилье</span>
-              <p>Рекомендуем пожить в настоящем <br>
-              мотеле, все как в кино!<p>
+            <div class="features-reference-item">              
+              <p class="reference-item-caption">Жилье</p>
+              <p>Рекомендуем пожить в настоящем мотеле, все как в кино!<p>
+            </div>                          
+            <div class="features-reference-item">              
+              <p class="reference-item-caption">Еда</p>
+              <p>Всегда заказывайте фирменный бургер, вы не разочаруетесь!<p>
             </div>
-            <div class="features-reference-item">
-              <img src="img/index-logo.png" width="75" height="72" alt="Еда">
-              <span>Еда</span>
-              <p>Всегда заказывайте фирменный бургер, <br>
-              вы не разочаруетесь!<p>
-            </div>
-            <div class="features-reference-item">
-              <img src="img/index-logo.png" width="75" height="72" alt="Сувениры">
-              <span>Сувениры</span>
-              <p>Не только китайского, но и местного<br>
-              производства!<p>
+            <div class="features-reference-item">              
+              <p class="reference-item-caption">Сувениры</p>
+              <p>Не только китайского, но и местного производства!<p>
             </div>
           </div>
           <div class="features-item features-item-right">
@@ -74,7 +68,7 @@
             <div class="features-item-slogan">
               <h2 class="features-item-caption">Там есть <br>
               мост дьявола</h2>
-              <span>№ 2</span>
+              <p>№ 2</p>
               <p>Да, по нему можно пройти! Если конечно вы осмелитесь</p>
             </div>              
           </div>
@@ -82,23 +76,20 @@
             <div class="features-list-slogan">
               <h2 class="features-list-caption">Небольшая<br>
               площадь</h2>
-              <span>№ 3</span>
-              <p>Все достопримечательности<br>
-              находятся очень близко</p>            
+              <p>№ 3</p>
+              <p>Все достопримечательности находятся очень близко</p>            
             </div>
             <div class="features-list-slogan">
               <h2 class="features-list-caption">Красивая<br>
               дорога</h2>
-              <span>№ 4</span>
-              <p>Ехать в Седону из Лас-Вегаса совсем<br>
-              не скучно!</p>            
+              <p>№ 4</p>
+              <p>Ехать в Седону из Лас-Вегаса совсем не скучно!</p>            
             </div>
             <div class="features-list-slogan">
               <h2 class="features-list-caption">Мало<br>
               туристов</h2>
-              <span>№ 5</span>
-              <p>Большинство едет в Гранд Каньон и <br>
-              толпится там</p>            
+              <p>№ 5</p>
+              <p>Большинство едет в Гранд Каньон и толпится там</p>            
             </div>
           </div>       
         </section>       
@@ -107,29 +98,30 @@
             <b>Заинтересовались?</b>
             <p>Укажите предполагаемые даты поездки, и мы покажем вам лучшие предложения гостиниц в Седоне</p>
           </div>
-          <div class="map">
-            <img src="img/index-logo.png" width="1200" height="593" alt="Карта местности">          
-          </div>
+          <input type="button" value="Поиск гостиницы в Седоне" class="popup-button">
           <div class="popup">
             <form class="popup-form" action="https://echo.htmlacademy.ru" method="get">
               <h2>Поиск гостиницы в Седоне</h2>
-                <label> Дата заезда:
-                  <input type="text" name="date-arrival" placeholder="24 апреля 2017">
-                  <img src="img/index-logo.png" width="21" height="22" alt="Date arrival">
-                </label>
-                <label>Дата выезда:
-                  <input type="text" name="date-departure" placeholder="4 июля 2017">
-                  <img src="img/index-logo.png" width="21" height="22" alt="Date departure">
-                </label>
-                <label>Взрослые:
-                  <input type="text" name="adults" placeholder="2">
-                </label>
-                <label>Дети:
-                  <input type="text" name="children" placeholder="0">
-                </label> 
+                <label for="date-arrival"> Дата заезда:</label>
+                  <input type="text" name="date-arrival" value="24 апреля 2017" id="date-arrival">
+                  <input type="button" value="Дата отправки" class="calendar-button">           
+                <label for="date-departure">Дата выезда:</label>
+                  <input type="text" name="date-departure" value="4 июля 2017" id="date-departure">
+                  <input type="button" value="Дата выезда" class="calendar-button">                
+                <label for="adults">Взрослые:</label>
+                  <input type="button" value="plus" class="plus-button">                  
+                  <input type="text" name="adults" value="2" id="adults">
+                  <input type="button" value="minus" class="minus-button">
+                <label for="children">Дети:</label>
+                  <input type="button" value="plus" class="plus-button">
+                  <input type="text" name="children" value="0" id="children">
+                  <input type="button" value="minus" class="minus-button">  
                 <input type="submit" value="Найти">                
             </form>
           </div>
+          <div class="map">
+            <img src="img/index-logo.png" width="1200" height="593" alt="Карта местности">          
+          </div>          
         </section>
       </div>
     </main>    
@@ -144,7 +136,7 @@
           <a class="social-btn" href="https://instagram.com/htmlacademy">YouTube</a>
         </div>
         <div class="footer-copyright">
-          <span class="footer-copyright-text">Website by</span><a href="https://htmlacademy.ru">HTML Academy</a>
+          <p class="footer-copyright-text">Website by<a href="https://htmlacademy.ru">HTML Academy</a></p>
         </div>
       </div>      
     </footer>     
