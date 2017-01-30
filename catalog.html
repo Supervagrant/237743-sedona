@@ -34,33 +34,35 @@
             <fieldset class="form-list-checkbox">
               <legend>Инфраструктура:</legend>
                 <label>
-                  <input type="checkbox" name="pool">Бассейн
+                <input type="checkbox" name="pool">Бассейн
                 </label>              
                 <label>
-                  <input type="checkbox" name="parking">Парковка
+                <input type="checkbox" name="parking">Парковка
                 </label>              
                 <label>
-                  <input type="checkbox" name="wi-fi">Wi-fi
+                <input type="checkbox" name="wi-fi">Wi-fi
                 </label>
             </fieldset>                
             <fieldset class="form-list-checkbox">
               <legend>Тип жилья:</legend>
                 <label>
-                  <input type="checkbox" name="hotel">Гостиница
+                <input type="checkbox" name="hotel">Гостиница
                 </label>              
                 <label>
-                  <input type="checkbox" name="motel">Мотель
+                <input type="checkbox" name="motel">Мотель
                 </label>              
                 <label>
-                  <input type="checkbox" name="apartments">Апартаменты
+                <input type="checkbox" name="apartments">Апартаменты
                 </label>  
-            </fieldset>
-            <div class="price">
-              <p class="caption">Стоимость в сутки (Р):</p>
-              <input type="text" name="min-price" placeholder="от 0">
-              <input type="text" name="max-price" placeholder="до 3000">
-              <div class="range">
-              </div>
+            </fieldset>            
+            <fieldset class="price">
+              <legend>Стоимость в сутки (Р):</legend>
+                <label for="min-price">От</label>              
+                <input type="text" name="min-price" value="0" id="min-price">
+                <label for="max-price">До</label>
+                <input type="text" name="max-price" value="3000" id="max-price">
+            </fieldset>    
+            <div class="range">            
             </div>
             <input type="submit" class="btn" value="Показать">
           </form>
@@ -75,8 +77,8 @@
               <a href="#" class="result-items-hidden">По рейтингу</a>
             </div>
             <div class="result-items-arrow">
-              <a href="#" class="increase"></a>
-              <a href="#" class="decrease"></a>
+              <a href="#" class="increase">По возрастанию</a>
+              <a href="#" class="decrease">По убыванию</a>
             </div>  
           </div>
           <div class="result-housing">

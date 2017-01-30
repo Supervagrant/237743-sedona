@@ -40,8 +40,7 @@
           </div>
           <div class="features-item features-item-left">
             <div class="features-item-slogan">
-              <h2 class="features-item-caption">Настоящий <br>
-              городок</h2>
+              <h2 class="features-item-caption">Настоящий городок</h2>
               <p>№ 1</p>
               <p>Седона - не аттракцион для туристов, там течет своя жизнь</p>
             </div>
@@ -66,28 +65,24 @@
             <div class="features-item-image">
             </div>
             <div class="features-item-slogan">
-              <h2 class="features-item-caption">Там есть <br>
-              мост дьявола</h2>
+              <h2 class="features-item-caption">Там есть мост дьявола</h2>
               <p>№ 2</p>
               <p>Да, по нему можно пройти! Если конечно вы осмелитесь</p>
             </div>              
           </div>
           <div class="features-list">
             <div class="features-list-slogan">
-              <h2 class="features-list-caption">Небольшая<br>
-              площадь</h2>
+              <h2 class="features-list-caption">Небольшая площадь</h2>
               <p>№ 3</p>
               <p>Все достопримечательности находятся очень близко</p>            
             </div>
             <div class="features-list-slogan">
-              <h2 class="features-list-caption">Красивая<br>
-              дорога</h2>
+              <h2 class="features-list-caption">Красивая дорога</h2>
               <p>№ 4</p>
               <p>Ехать в Седону из Лас-Вегаса совсем не скучно!</p>            
             </div>
             <div class="features-list-slogan">
-              <h2 class="features-list-caption">Мало<br>
-              туристов</h2>
+              <h2 class="features-list-caption">Мало туристов</h2>
               <p>№ 5</p>
               <p>Большинство едет в Гранд Каньон и толпится там</p>            
             </div>
@@ -97,25 +92,25 @@
           <div class="feedback-tip">
             <b>Заинтересовались?</b>
             <p>Укажите предполагаемые даты поездки, и мы покажем вам лучшие предложения гостиниц в Седоне</p>
-          </div>
-          <input type="button" value="Поиск гостиницы в Седоне" class="popup-button">
+          </div>                    
           <div class="popup">
-            <form class="popup-form" action="https://echo.htmlacademy.ru" method="get">
+            <button class="popup-button" form="popup-form">Поиск гостиницы в Седоне</button>
+            <form class="popup-form" action="https://echo.htmlacademy.ru" method="get" id="popup-form">
               <h2>Поиск гостиницы в Седоне</h2>
                 <label for="date-arrival"> Дата заезда:</label>
-                  <input type="text" name="date-arrival" value="24 апреля 2017" id="date-arrival">
-                  <input type="button" value="Дата отправки" class="calendar-button">           
+                <input type="text" name="date-arrival" value="24 апреля 2017" id="date-arrival">
+                <button class="calendar-button"></button>           
                 <label for="date-departure">Дата выезда:</label>
-                  <input type="text" name="date-departure" value="4 июля 2017" id="date-departure">
-                  <input type="button" value="Дата выезда" class="calendar-button">                
-                <label for="adults">Взрослые:</label>
-                  <input type="button" value="plus" class="plus-button">                  
-                  <input type="text" name="adults" value="2" id="adults">
-                  <input type="button" value="minus" class="minus-button">
+                <input type="text" name="date-departure" value="4 июля 2017" id="date-departure">
+                <button class="calendar-button"></button>                                
+                <label for="adults">Взрослые:</label>                
+                <button class="plus-button"></button>  
+                <input type="text" name="adults" value="2" id="adults">
+                <button class="minus-button"></button>                
                 <label for="children">Дети:</label>
-                  <input type="button" value="plus" class="plus-button">
-                  <input type="text" name="children" value="0" id="children">
-                  <input type="button" value="minus" class="minus-button">  
+                <button class="plus-button"></button>
+                <input type="text" name="children" value="0" id="children">
+                <button class="minus-button"></button>  
                 <input type="submit" value="Найти">                
             </form>
           </div>
