@@ -10,12 +10,10 @@ body {
   line-height: 21px;
   color: #ffffff;
   font-weight: bold;
-  font-family:PTSans, Avant Garde, arial, sans-serif;
-}
+  }
 .housing-description h2 {
   font-size: 21px;
   line-height: 26px;
   color: #000000;
-  font-weight: bold;
-  font-family:PTSans, Avant Garde, arial, sans-serif;
+  font-weight: bold;  
 }
