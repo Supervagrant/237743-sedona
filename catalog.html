@@ -56,16 +56,21 @@
                   <input type="checkbox" name="apartments">Апартаменты
                 </label>  
             </fieldset>            
-            <fieldset class="price">
-              <legend>Стоимость в сутки (Р):</legend>
-                <label for="min-price">От</label>              
-                <input type="text" name="min-price" value="0" id="min-price">
-                <label for="max-price">До</label>
-                <input type="text" name="max-price" value="3000" id="max-price">
-                <div class="range">            
+            <div class="filter-range">
+              <div class="filter-range-title">Стоимость в сутки (р):</div>
+              <div class="price-controls">
+                <label class="min-price">от <input type="text" name="min-price" value="0"></label>
+                <label class="max-price">до <input type="text" name="max-price" value="3000"></label>
+              </div>
+              <div class="range-controls">
+                <div class="scale">
+                  <div class="bar"></div>
                 </div>
-            </fieldset>    
-            <input type="submit" class="btn" value="Показать">
+                <div class="range-toggle range-toggle-min"></div>
+                <div class="range-toggle range-toggle-max"></div>
+              </div>
+              <button class="btn-transparent" type="submit">Показать</button>
+            </div>
           </form>
         </section>
         <section class="main-result">
@@ -153,7 +158,7 @@
         </section>
       </div>
     </main>   
-    <footer class="main-footer">
+    <footer class="main-footer catalog-pade">
       <div class="container">
         <div class="main-footer-logo">
           <p>#Visitsedona</p>
