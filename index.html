@@ -6,31 +6,29 @@
     <link href="css/style.css" rel="stylesheet">
   </head>
   <body>
-    <header class="main-header">
-      <div class="container">
+    <div class="container">
+      <header class="main-header">      
         <nav class="main-navigation">
-          <ul class="main-navigation-left">
-            <li class="main-navigation-left">
+          <ul class="main-navigation-list">
+            <li class="main-navigation-item">
               <a href="#">Информация</a>
             </li>
-            <li class="main-navigation-left">
+            <li class="main-navigation-item">
               <a href="#">Фото и видео</a>
             </li>
           </ul>
           <a class="header-logo"><img src="img/header-logo.png" width="138" height="70" alt="Sity of Sedona"></a>
-          <ul class="main-navigation-right">          
-            <li class="main-navigation-right">
+          <ul class="main-navigation-list">          
+            <li class="main-navigation-item">
               <a href="#">Карта штата</a>
             </li>
-            <li class="main-navigation-right">
+            <li class="main-navigation-item">
               <a href="#">Гостиницы</a>
             </li>
           </ul>          
-        </nav>        
-      </div>
-    </header>
-    <main>  
-      <div class="container">
+        </nav>
+      </header>
+      <main>      
         <section class="promo">
           <img src="img/welcome.png" width="458" height="352" alt="WELCOM to the gorgeous SEDONA, because the Grand Canyon sucks!">
         </section>
@@ -97,7 +95,6 @@
           <div class="popup">
             <button class="popup-button" form="popup-form">Поиск гостиницы в Седоне</button>
             <form class="popup-form" action="https://echo.htmlacademy.ru" method="get" id="popup-form">
-              <h2>Поиск гостиницы в Седоне</h2>
                 <label for="date-arrival"> Дата заезда:</label>
                 <input type="text" name="date-arrival" value="24 апреля 2017" id="date-arrival">
                 <button class="calendar-button"></button>           
@@ -118,11 +115,9 @@
         </section>
         <div class="map">
           <img src="img/bg-map.jpg" width="1200" height="593" alt="Карта местности">          
-        </div>
-      </div>
-    </main>    
-    <footer class="main-footer">
-      <div class="container">
+        </div>      
+      </main>    
+      <footer class="main-footer index-footer">      
         <div class="main-footer-logo">
           <p>#Visitsedona</p>
         </div>
@@ -133,8 +128,8 @@
         </div>
         <div class="footer-copyright">
           <p class="footer-copyright-text">Website by<a href="https://htmlacademy.ru">HTML Academy</a></p>
-        </div>
-      </div>      
-    </footer>     
+        </div>            
+      </footer>
+    </div>    
   </body>
 </html>
