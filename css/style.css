@@ -1,6 +1,5 @@
 html,
 body {
-  width: 1280px;
   margin: 0;
   padding: 0;
 }
@@ -17,19 +16,21 @@ body {
   width: 1200px;
   margin: 0 auto;
   padding: 0 10px;
-  background-color: #ffffff;  
+  position: relative; 
 }
 .main-navigation {
   min-height: 56px;
-  width: 1200px;
   display: flex;
-  justify-content: space-between;   
+  justify-content: space-between;
+  position: relative; 
 }
 .main-navigation-list {
   min-height: 56px;
   width: 40%;
   display: flex;  
-  align-items: center;  
+  align-items: center;
+  padding: 0; 
+  margin: 0; 
 }
 .header-logo {
   width: 20%;
@@ -145,10 +146,8 @@ body {
   height: 593 px;
   z-index: 1;
 }
-
 .popup-button {
-  margin-left: 316px;
-  
+  margin-left: 316px;  
   width: 568px;
   height: 86px;
   color: #ffffff;
@@ -160,27 +159,52 @@ body {
 .popup-form {
   position: absolute;
   left: 316px;
-  top: 291px;
-  width: 568px;
-  height: 395px;
+  top: 100%;
+  width: 513px;
+  height: 340px;
   background-color: #ffffff;
-}
-.popup-form h2 {
-  width: 568px;
-  height: 56px;
-  color: #ffffff;
-  background-color: #766357;
-  font-size: 21px;
+  padding-top: 55px;
+  padding-left: 55px;
+  font-size: 14px;
+  font-weight: 700;
   line-height: 26px;
   text-transform: uppercase;
-  text-align: center;
   vertical-align: middle;
-  padding-top: 30px;
-  margin-bottom: 55px;
+}
+.date-arrival input, 
+.date-departure input {
+  width: 346px;
+  height: 36px;
+  border: none;
+  background-color: #f2f2f2;
+}
+.date-arrival label {
+  padding-right: 21px;
+}
+.date-departure label {
+  padding-right: 17px;
+}
+.date-arrival {
+  margin-bottom: 29px;
+}
+.date-departure {
+  margin-bottom: 30px;
+}
+.visitors {
+  display: flex;
+  margin-bottom: 54px;
+}
+.adults {
+  width: 225px;
+  margin-right: 53px;
+}
+.children {
+  width: 180px;
 }
 input[type="submit"] {
-  width: 458px;
-  height: 58px;
+  width: 446px;
+  height: 56px;
+  border: none;
   background-color: #81b3d2;
   color: #ffffff;
   font-size: 21px;
@@ -188,99 +212,87 @@ input[type="submit"] {
   line-height: 26px;
   text-transform: uppercase;
 }
- .popup-form label {
-  margin-left: 55px;
-  margin-right: 30px;
- }
-.popup-form label:nth-of-type(3) {
-  margin-right: 47px;
-}
- input[type="text"]:nth-of-type(1) {
-  width: 342px;
-  height: 32px;
-  margin-bottom: 30px;
-}
-input[type="text"]:nth-of-type(2) {
-  width: 342px;
-  height: 32px;
-  margin-bottom: 17px;
-}
-input[type="text"]:nth-of-type(3) {
-  width: 34px;
-  height: 32px;
-  margin-bottom: 54px;
-   margin-left: 0px;
-}
-input[type="text"]:nth-of-type(4) {
-  width: 34px;
-  height: 32px;
-  margin-bottom: 54px;
-}
 .plus-button {
   margin-top: 0px;
   padding: 0;
-  width: 36px;
+  width: 34px;
+  height: 34px;
+}
+
+.adults input,
+.children input {
+  width: 38px;
   height: 38px;
+  background-color: #f2f2f2;
+  border: none;
 }
 .main-footer {
   margin: 0 auto;
   width: 1200px;
-  min-height: 85px;  
+  min-height: 95px;  
   background-color: rgb(255, 255, 255);
   padding-top: 35px; 
   display: flex;  
 }
 .index-footer {
   position: absolute;
-  top: 2644px;
+  bottom: 0;
   z-index: 2;
   background-color: rgba(255, 255, 255, 0.7);
-  padding-top: 35px;  
-}
-.catalog-footer {
-  border-top: 1px solid #e5e5e5;
 }
 .main-footer-logo {
-  width: 400px;
-  
+  width: 400px;  
   vertical-align: middle;
-  text-align: center;
-  min-height: 85px;  
+  text-align: center;  
 }
 .footer-social {
-  width: 400px;
-  
+  width: 400px;  
   vertical-align: middle;
   text-align: center;
 }
 .footer-copyright  {
-  width: 400px;
-  
+  width: 400px;  
   text-align: center;  
 }
-p .footer-copyright {
- display: inline-block; 
-}
+
                           /*Разметка второй страницы */
 .form-list {
   display: flex;
+  justify-content: space-between;
+  padding-left: 72px;
+  padding-right: 72px;
+}
+.form-list-left {
+  display: flex;
+  justify-content: space-between;
+  width: 45%;
+  padding-top: 31px; 
+}
+.form-list-checkbox {
+  width: 45%;
+  border: none;  
+}
+.form-list-checkbox legend {
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 21px;
+  text-transform: uppercase;
+  color: #ffffff;
 }
 .form-list-checkbox label {
   display: block;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 21px;
+  text-transform: uppercase;
+  color: #ffffff;
 }
 .main-form {
-  height: 219px;
+  height: 217px;
   background-color: #62936C;
 }
-.form-list-checkbox {
-  padding-top: 10px;  
-}
-.form-list-checkbox:nth-of-type(1) {
-  margin-right: 102px;
-  margin-left: 72px;
-}
-.form-list-checkbox:nth-of-type(2) {
-  margin-right: 356px;
+.filter-range {
+  margin-right: 
 }
 .main-result {
   min-height: 540px;
@@ -317,6 +329,11 @@ p .footer-copyright {
 .housing  {
   min-height: 70px;
   display: flex;
+}
+.hotel {
+  margin-bottom: 30px;
+}
+.motel {
   margin-bottom: 30px;
 }
 .housing img {
@@ -326,10 +343,9 @@ p .footer-copyright {
 .housing-description {
   width: 270px;
   margin-left: 30px; 
-
 }
 .housing-description h2 {
-  padding-top: 20px; 
+  padding-top: 22px; 
   margin: 0;  
 }
 .housing-description-left {
@@ -362,8 +378,10 @@ p .footer-copyright {
   min-height: 85px;
   white-space: nowrap;
   position: absolute;
-  top: 812px;
-  
+  top: 812px; 
+}
+.catalog-footer {
+  border-top: 2px solid #e5e5e5;
 }
              /*Разметка сложного фильтра*/
 .filter-range {
@@ -435,7 +453,6 @@ p .footer-copyright {
   top: -9px;
   width: 4px;
   height: 4px;
-
   background: #ababab;
   border: 8px solid #ffffff;
   border-radius: 50%;
@@ -448,7 +465,6 @@ p .footer-copyright {
 .range-toggle-min {
   left: 0;
 }
-
 .range-toggle-max {
   left: 80%;
 }
@@ -468,7 +484,7 @@ p .footer-copyright {
 .btn-transparent:hover {
   color: #000000;
   background: #ffffff;
-}
+ }
 
 
 .features-item-caption h2 {
@@ -476,7 +492,7 @@ p .footer-copyright {
   line-height: 21px;
   color: #ffffff;
   font-weight: bold;
-  }
+ }
 .housing-description h2 {
   font-size: 21px;
   line-height: 26px;

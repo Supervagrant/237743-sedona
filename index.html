@@ -95,20 +95,30 @@
           <div class="popup">
             <button class="popup-button" form="popup-form">Поиск гостиницы в Седоне</button>
             <form class="popup-form" action="https://echo.htmlacademy.ru" method="get" id="popup-form">
-                <label for="date-arrival"> Дата заезда:</label>
-                <input type="text" name="date-arrival" value="24 апреля 2017" id="date-arrival">
-                <button class="calendar-button"></button>           
-                <label for="date-departure">Дата выезда:</label>
-                <input type="text" name="date-departure" value="4 июля 2017" id="date-departure">
-                <button class="calendar-button"></button>                                
-                <label for="adults">Взрослые:</label>                
-                <button class="plus-button"></button>  
-                <input type="text" name="adults" value="2" id="adults">
-                <button class="minus-button"></button>                
-                <label for="children">Дети:</label>
-                <button class="plus-button"></button>
-                <input type="text" name="children" value="0" id="children">
-                <button class="minus-button"></button>  
+                <div class="date-arrival">
+                  <label for="date-arrival"> Дата заезда:</label>
+                  <input type="text" name="date-arrival" value="24 апреля 2017" id="date-arrival">
+                  <button class="calendar-button"></button>
+                </div>
+                <div class="date-departure">
+                  <label for="date-departure">Дата выезда:</label>
+                  <input type="text" name="date-departure" value="4 июля 2017" id="date-departure">
+                  <button class="calendar-button"></button>
+                </div>
+                <div class="visitors">
+                  <div class="adults">
+                    <label for="adults">Взрослые:</label>                
+                    <button class="plus-button"></button>  
+                    <input type="text" name="adults" value="2" id="adults">
+                    <button class="minus-button"></button>
+                  </div>
+                  <div class="children">
+                    <label for="children">Дети:</label>
+                    <button class="plus-button"></button>
+                    <input type="text" name="children" value="0" id="children">
+                    <button class="minus-button"></button>
+                  </div>
+                </div>  
                 <input type="submit" value="Найти">                
             </form>
           </div>                    
