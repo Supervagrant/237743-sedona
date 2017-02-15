@@ -287,8 +287,13 @@ body {
   color: #ffffff;
   background-color: #766357;
   font-size: 21px;
+  font-weight: 700;
+  font-family: "PT Sans", "Avant Garde", "Arial", sans-serif;
+  vertical-align: middle;
   line-height: 26px;
-  
+  text-transform: uppercase;
+  border: none;
+  vertical-align: middle; 
 }
 .popup-form {
   position: absolute;
@@ -301,16 +306,22 @@ body {
   padding-left: 55px;
   font-size: 14px;
   font-weight: 700;
-  line-height: 26px;
-
-  vertical-align: middle;
+  line-height: 26px;  
 }
 .date-arrival input, 
 .date-departure input {
-  width: 346px;
+  width: 303px;
   height: 36px;
   border: none;
   background-color: #f2f2f2;
+  color: #000000;
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 26px;
+  text-transform: uppercase;
+  padding-left: 13px;
+  padding-right: 30px;
+  font-family: "PT Sans", "Avant Garde", "Arial", sans-serif;
 }
 .date-arrival label {
   padding-right: 21px;
@@ -324,9 +335,67 @@ body {
 .date-departure {
   margin-bottom: 30px;
 }
+.date-arrival .calendar-button {
+  width: 21px;
+  height: 22px;
+  position: absolute;
+  top: 63px;
+  right: 64px;
+  font-size: 0;
+  background-image: url("../img/icon-calendar.png");
+  background-color: #f2f2f2;
+  border: 0;
+  cursor: pointer;
+}
+.date-departure .calendar-button {
+  width: 21px;
+  height: 22px;
+  position: absolute;
+  top: 130px;
+  right: 64px;
+  font-size: 0;
+  background-image: url("../img/icon-calendar.png");
+  background-color: #f2f2f2;
+  border: 0;
+  cursor: pointer;
+}
+.plus-button {
+  width: 38px;
+  height: 38px;
+  position: absolute;
+  top: 190px;
+  margin: 0;
+  padding: 0;
+  border: none;
+  background-color: #f2f2f2;
+  background-image: url("../img/icon-plus.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  cursor: pointer;
+}
+.minus-button {
+  width: 38px;
+  height: 38px;
+  position: absolute;
+  top: 190px;
+  margin: 0;
+  padding: 0;
+  border: none;
+  background-color: #f2f2f2;
+  background-image: url("../img/icon-minus.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  cursor: pointer;
+}
+.adults input {
+  padding-left: 38px;
+}
+.children input {
+  margin-left: 38px;
+}
 .visitors {
   display: flex;
-  margin-bottom: 54px;
+  margin-bottom: 51px;
 }
 .adults {
   width: 225px;
@@ -336,7 +405,7 @@ body {
   width: 180px;
 }
 input[type="submit"] {
-  width: 446px;
+  width: 458px;
   height: 56px;
   border: none;
   background-color: #81b3d2;
@@ -344,14 +413,10 @@ input[type="submit"] {
   font-size: 21px;
   font-weight: 700;
   line-height: 26px;
-  
+  text-transform: uppercase;
+  font-family: "PT Sans", "Avant Garde", "Arial", sans-serif;  
 }
-.plus-button {
-  margin-top: 0px;
-  padding: 0;
-  width: 34px;
-  height: 34px;
-}
+
 
 .adults input,
 .children input {
@@ -359,6 +424,18 @@ input[type="submit"] {
   height: 38px;
   background-color: #f2f2f2;
   border: none;
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 26px;
+  text-transform: uppercase;
+  font-family: "PT Sans", "Avant Garde", "Arial", sans-serif;
+  text-align: center;
+}
+.adults label {
+  margin-right: 41px;
+}
+.children label {
+  margin-right: 27px;
 }
 .main-footer {
   margin: 0 auto;
@@ -376,20 +453,60 @@ input[type="submit"] {
 }
 .main-footer-logo {
   width: 400px;  
-  vertical-align: middle;
-  text-align: center;  
+  text-align: center;
+  padding-top: 11px;
+  font-size: 21px;
+  font-weight: 700;
+  line-height: 26px;
+  text-transform: uppercase;
+}
+.main-footer-logo p {
+  margin: 0;
 }
 .footer-social {
-  width: 400px;  
-  vertical-align: middle;
+  width: 400px;
   text-align: center;
+  padding-top: 2px;
+  padding-left: 2px;
 }
-.footer-copyright  {
-  width: 400px;  
-  text-align: center;  
+.social-btn {
+  font-size: 0;
+  display: inline-block;
+  width: 46px;
+  height: 48px;
+  margin: 0 2px;
+  vertical-align: top;
+  text-decoration: none;
+}
+.twitter {  
+  background: #81b3d2 url("../img/icon-twitter.png") no-repeat center;
+}
+.facebook {  
+  background: #81b3d2 url("../img/icon-facebook.png") no-repeat center;
+}
+.instagram {  
+  background: #81b3d2 url("../img/icon-instagram.png") no-repeat center;
 }
 
-                          /*Разметка второй страницы */
+.footer-copyright  {
+  width: 400px;  
+  position: relative;
+  left: 105px;
+}
+.footer-copyright a {
+  font-size: 0;
+  display: inline-block;
+  width: 113px;
+  height: 39px;
+  text-align: top;
+  margin-left: 8px;
+  text-decoration: none;
+  background: url("../img/icon-htmlacademy.png") no-repeat top;
+  position: absolute;
+  top: 6px;
+}
+
+  /*Разметка второй страницы */
 .form-list {
   display: flex;
   justify-content: space-between;
