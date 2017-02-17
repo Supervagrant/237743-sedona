@@ -4,8 +4,8 @@
     <meta charset="utf-8">
     <title>Седона</title>
     <link href="https://fonts.googleapis.com/css?family=PT+Sans:400,700&amp;subset=cyrillic" rel="stylesheet">
+    <link href="css/normalize.css" rel="stylesheet">
     <link href="css/style.css" rel="stylesheet">
-    <link href="css/normalize.css" rel="stylesheet">    
   </head>
   <body>
     <div class="container">
@@ -40,12 +40,10 @@
             <p>Рассмотрим 5 причин, по которым Седона круче, чем гранд каньон!</p>
           </div>
           <div class="features-item features-item-left">
-            <div class="features-item-slogan">
-              <div class="features-item-wrapper-one">
-                <h2 class="features-item-caption">Настоящий городок</h2>
-                <p>&mdash; № 1 &mdash;</p>
-                <p>Седона - не аттракцион для туристов, там течет своя жизнь</p>
-              </div>
+            <div class="features-item-slogan caption-one">
+              <h2 class="features-item-caption ">Настоящий городок</h2>
+              <p>&mdash; № 1 &mdash;</p>
+              <p>Седона - не аттракцион для туристов, там течет своя жизнь</p>
             </div>
             <div class="features-item-image"><img src="img/realcity.jpg" width="800" height="265" alt="Photo of Sedona">
             </div>  
@@ -67,12 +65,10 @@
           <div class="features-item features-item-right">
             <div class="features-item-image"><img src="img/bridge.jpg" width="800" height="265" alt="Photo of Devil's bridge">
             </div>
-            <div class="features-item-slogan">
-              <div class="features-item-wrapper-two">
-                <h2 class="features-item-caption">Там есть <br> мост дьявола</h2>
-                <p>&mdash; № 2 &mdash;</p>
-                <p>Да, по нему можно пройти! Если конечно вы осмелитесь</p>
-              </div>  
+            <div class="features-item-slogan caption-two">
+              <h2 class="features-item-caption">Там есть <br> мост дьявола</h2>
+              <p>&mdash; № 2 &mdash;</p>
+              <p>Да, по нему можно пройти! Если конечно вы осмелитесь</p> 
             </div>              
           </div>
           <div class="features-list">
@@ -105,14 +101,14 @@
             <p>Укажите предполагаемые даты поездки, <br> и мы покажем вам лучшие предложения гостиниц в Седоне</p>
           </div>                    
           <div class="popup">
-            <button class="popup-button" form="popup-form">Поиск гостиницы в Седоне</button>
+            <button class="popup-button">Поиск гостиницы в Седоне</button>
             <form class="popup-form" action="https://echo.htmlacademy.ru" method="get" id="popup-form">
-                <div class="date-arrival">
+                <div class="dates date-arrival">
                   <label for="date-arrival"> Дата заезда:</label>
                   <input type="text" name="date-arrival" value="24 апреля 2017" id="date-arrival">
                   <button class="calendar-button"></button>
                 </div>
-                <div class="date-departure">
+                <div class="dates date-departure">
                   <label for="date-departure">Дата выезда:</label>
                   <input type="text" name="date-departure" value="4 июля 2017" id="date-departure">
                   <button class="calendar-button"></button>
@@ -144,7 +140,7 @@
           <p>#Visitsedona</p>
         </div>
         <div class="footer-social">
-          <a class="social-btn twitter" href="https://tvitter.com/htmlacademy">Twitter</a>
+          <a class="social-btn twitter" href="https://twitter.com/htmlacademy">Twitter</a>
           <a class="social-btn facebook" href="https://facebook.com/htmlacademy">Facebook</a>
           <a class="social-btn instagram" href="https://instagram.com/htmlacademy">YouTube</a>
         </div>
