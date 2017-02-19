@@ -1087,6 +1087,7 @@ input[type="submit"]:active {
 }
 .price-controls input {
   width: 50px;
+  height: 32px;
   margin: 0;
   color: inherit;
   font: inherit;
