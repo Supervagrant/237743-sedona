@@ -24,24 +24,36 @@ body {
 }
 .main-navigation {
   min-height: 56px;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: space-between;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
   position: relative; 
 }
 .main-navigation-list {
   min-height: 56px;
   width: 40%;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: space-around;  
-  align-items: center;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;  
+  -webkit-box-align: center;  
+      -ms-flex-align: center;  
+          align-items: center;
   padding: 0; 
   margin: 0;
   list-style: none;   
 }
 .main-navigation-item {
   width: 50%;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: space-around;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
 }
 .main-navigation-list a {
   text-decoration: none;
@@ -70,12 +82,20 @@ body {
   margin: 0 auto;
   padding: 0;
   height: 56px;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: center;  
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;  
 }
 .promo {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   padding-top: 75px;
   height: 435px;
   background: #4794AB url("../img/bg-promo.jpg") no-repeat center bottom;
@@ -112,6 +132,8 @@ body {
   font-weight: 400;
 }
 .features-item {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
   box-sizing: border-box;
   width: 100%;
@@ -159,6 +181,8 @@ body {
   height: 256px;
 }
 .features-reference {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
   box-sizing: border-box;
   line-height: 21px;
@@ -169,9 +193,16 @@ body {
   padding-top: 140px;
   padding-bottom: 40px;  
   box-sizing: border-box;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: column;
-  align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   position: relative;
 }
 .reference-item-caption {
@@ -225,6 +256,8 @@ body {
   background-image: url("../img/icon-souvenir.png");
 }
 .features-list {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
   background-color: #eeeeee;
   line-height: 21px;
@@ -346,9 +379,15 @@ body {
 .dates {
   position: relative;
   margin-bottom: 28px;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: space-between;
-  align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 .dates input {
   width: 299px;
@@ -437,19 +476,31 @@ body {
   background-image: url("../img/icon-minus-active.png");
 }
 .visitors {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
   margin-bottom: 55px;
-  justify-content: space-between;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
 .adults {
   width: 50%;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  align-items: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 .children {
   width: 38%;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  align-items: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 .adults input,
 .children input {
@@ -510,8 +561,12 @@ input[type="submit"]:active {
   padding-top:30px;
   padding-bottom: 45px;
   background-color: rgb(255, 255, 255);
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  align-items: center;  
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;  
 }
 .index-footer {
   position: absolute;
@@ -574,9 +629,15 @@ input[type="submit"]:active {
 }
 .footer-copyright  {
   width: 400px;  
+  display: -webkit-box;  
+  display: -ms-flexbox;  
   display: flex;
-  align-items: center;
-  justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 .footer-copyright a {
   font-size: 0;
@@ -598,14 +659,22 @@ input[type="submit"]:active {
 
                              /*Разметка второй страницы */
 .form-list {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: space-between;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
   padding-left: 60px;
   padding-right: 72px;
 }
 .form-list-left {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: space-between;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
   width: 45%;
   padding-top: 28px; 
 }
@@ -613,8 +682,13 @@ input[type="submit"]:active {
   width: 45%;
   border: none;
   margin-right: 100px;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: column; 
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column; 
 }
 .form-list-checkbox legend {
   font-size: 16px;
@@ -674,13 +748,21 @@ input[type="submit"]:active {
 }
 .result {
  min-height: 86px;
+ display: -webkit-box;
+ display: -ms-flexbox;
  display: flex; 
- align-items: center;
+ -webkit-box-align: center; 
+     -ms-flex-align: center; 
+         align-items: center;
  border-bottom: 1px solid #e5e5e5;
 }
 .result-items {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex; 
-  align-items: center;
+  -webkit-box-align: center; 
+      -ms-flex-align: center; 
+          align-items: center;
 }
 .result-items p {  
   margin-right: 40px;
@@ -690,8 +772,12 @@ input[type="submit"]:active {
 }
 .result-items-wrapper {
   width: 238px;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: space-between;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
 .result-items a { 
   font-size: 12px;
@@ -711,6 +797,8 @@ input[type="submit"]:active {
 .result-items-arrow {
   margin-top: 2px;
   margin-left: 505px;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
 }
 .increase {
@@ -756,6 +844,8 @@ input[type="submit"]:active {
 }
 .housing  {
   min-height: 70px;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
 }
 .hotel {
@@ -862,9 +952,16 @@ input[type="submit"]:active {
 .housing-description-rating {
   margin-left: 513px;
   margin-top: 23px;  
+  display: -webkit-box;  
+  display: -ms-flexbox;  
   display: flex;
-  flex-direction: column;
-  justify-content: space-between;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
 .housing-description-rating p {  
   display: inline-block;
@@ -881,8 +978,12 @@ input[type="submit"]:active {
   vertical-align: middle;
 }
 .rating-stars {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: flex-end;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
 }
 .star {
    margin: 10px 2px;
@@ -969,7 +1070,8 @@ input[type="submit"]:active {
   width: 2px;
   height: 22px;
   background: #ffffff;
-  transform: translate(-50%, -50%);
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
 }
 .price-controls label {
   display: inline-block;
@@ -1042,6 +1144,5 @@ input[type="submit"]:active {
   color: #000000;
   background: #ffffff;
  }
-
 
 
