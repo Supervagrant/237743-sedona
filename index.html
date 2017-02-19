@@ -6,6 +6,7 @@
     <link href="https://fonts.googleapis.com/css?family=PT+Sans:400,700&amp;subset=cyrillic" rel="stylesheet">
     <link href="css/normalize.css" rel="stylesheet">
     <link href="css/style.css" rel="stylesheet">
+    
   </head>
   <body>
     <div class="container">
@@ -150,19 +151,7 @@
           <a href="https://htmlacademy.ru"></a>
         </div>            
       </footer>
-    </div>
-    <script>
-      var link = document.querySelector(".popup-button");
-      
-      var popup = document.querySelector(".popup-form");
-      
-      var login = popup.querySelector("[name=date-arrival]");
-      
-      link.addEventListener("click", function(event) {
-        event.preventDefault();
-        popup.classList.toggle("modal-content-show");
-        login.focus();
-      });
-    </script>
+    </div>    
+    <script src="js/scripts.js"></script>
   </body>
 </html>
