@@ -38,28 +38,17 @@ body {
   list-style: none;
   font-size: 0;
 }
-/*.main-navigation-item {
-  width: 20%;
-  display: inline-block;
-  vertical-align: middle;
-  float: left;  
-}*/
 .main-navigation-left {
   width: 20%;
-  display: inline-block;
-  vertical-align: middle;
   float: left;
   text-align: left;
   margin-right: 30px;
 }
 .main-navigation-right {
   width: 20%;
-  display: inline-block;
-  vertical-align: middle;
   float: left;
   text-align: right; 
 }
-
 .navigation-left-end {
   margin-right: 147px;
   box-sizing: border-box;
@@ -1257,5 +1246,4 @@ input[type="submit"]:active {
   color: #000000;
   background: #ffffff;
  }
-
 
