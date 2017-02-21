@@ -108,7 +108,7 @@ body {
 }
 .features {
   min-height: 1314px;
-  z-index: 3;
+  z-index: 4;
   position: relative;
 }
 .features-intro {
@@ -323,7 +323,7 @@ body {
   text-align: center;  
   line-height: 24px;
   padding-top: 52px;
-  z-index: 3;
+  z-index: 4;
   position: relative;
 }
 .feedback-tip b {
@@ -369,7 +369,7 @@ body {
   border: none;
   outline: none;
   vertical-align: middle;
-  z-index: 3;
+  z-index: 4;
   position: relative;
 }
 .popup-button:hover {
@@ -393,8 +393,9 @@ body {
   font-size: 14px;
   font-weight: 700;
   line-height: 26px;
-  animation: bounce 1s;
   z-index: 3;
+  transform: translateY(0);
+  transition: 1s transform;
 }
 .modal-content-show {
   transform: translateY(-100%);
