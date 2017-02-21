@@ -313,7 +313,7 @@ body {
 }
 .feedback {
   position: relative;
-  background-color: #ffffff;
+  background-color: #ffffff;  
 }
 .feedback-tip {
   min-height:153px;
@@ -386,10 +386,14 @@ body {
   padding-bottom: 55px;
   font-size: 14px;
   font-weight: 700;
-  line-height: 26px;  
+  line-height: 26px;
+  -webkit-animation: bounce 0.7s;
+  animation: bounce 0.7s;
 }
 .modal-content-show {
   display: none;
+  -webkit-animation: bounce 0.7s;
+  animation: bounce 0.7s;
 }
 .dates {
   position: relative;
@@ -569,6 +573,34 @@ input[type="submit"]:hover {
 input[type="submit"]:active {
   background-color: #5496bd;
   color: rgba(255, 255, 255, 0.3)
+}
+@-webkit-keyframes bounce {
+  0% {
+    -webkit-transform: translateY(-400px);
+    transform: translateY(-400px);
+  }
+  60% {
+    -webkit-transform: translateY(50px);
+    transform: translateY(50px);
+  }
+  100% {
+    -webkit-transform: translateY(0);
+    transform: translateY(0);
+  }
+}
+@keyframes bounce {
+  0% {
+    -webkit-transform: translateY(-400px);
+    transform: translateY(-400px);
+  }
+  60% {
+    -webkit-transform: translateY(50px);
+    transform: translateY(50px);
+  }
+  100% {
+    -webkit-transform: translateY(0);
+    transform: translateY(0);
+  }
 }
 .main-footer {
   margin: 0 auto;
@@ -1246,4 +1278,3 @@ input[type="submit"]:active {
   color: #000000;
   background: #ffffff;
  }
-
